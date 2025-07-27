@@ -1,4 +1,6 @@
 ## Hi there 👋
+
+[![NiWong03's GitHub stats](https://github-readme-stats.vercel.app/api?username=niwong03)]
 ![](./profile-3d-contrib/profile-green-animate.svg)
 <!--
 **NiWong03/NiWong03** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

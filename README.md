@@ -1,7 +1,20 @@
 ## Hi there 👋
 
-![NiWong03's GitHub stats](https://github-readme-stats.vercel.app/api?username=niwong03&show_icons=true&theme=tokyonight)
-<img src="./profile-3d-contrib/profile-night-view.svg" width="550"/>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=niwong03&show_icons=true&theme=tokyonight" />
+    </td>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=niwong03&show_icons=true&theme=tokyonight" height="195" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./profile-3d-contrib/profile-night-view.svg" width="600" />
+    </td>
+  </tr>
+</table>
 <!--
 **NiWong03/NiWong03** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

@@ -18,10 +18,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+
+      - name: Stash any unstaged changes
+        run: git stash
+        
       - name: Pull latest changes
         run: git pull origin main --rebase
-
-
 
       - name: Commit & Push
         run: |

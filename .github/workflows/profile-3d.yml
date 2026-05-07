@@ -14,19 +14,21 @@ jobs:
     name: generate-github-profile-3d-contrib
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Pull latest changes
+        run: git pull origin main --rebase
+      
       - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         
-      - name: Pull latest changes
-        run: git pull origin main --rebase
-
-      - name: Commit & Push
+      - name: Commit generated files
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          if git commit -m "generated"; then
-            git push origin main
-          fi
+          git commit -m "generated" || true
+
+      - name: Push changes
+        run: git push origin main
